@@ -28,6 +28,7 @@ func initDatabase() {
 
 func setupRoute(app *fiber.App) {
 	app.Get("/todos", model.GetTodos)
+	app.Post("/todos", model.CreateTodo)
 }
 
 func main() {
